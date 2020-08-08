@@ -1,0 +1,45 @@
+.wrap {
+    display: inline-block;
+}
+.wrap .item{
+    border: 1px solid #ccc;
+    margin: 5px;
+    background-color: #efefef;
+    width: 30%;
+    float: left;
+}
+.wrap .item p{
+    padding: 10px;
+}
+.wrap .heading{
+    text-align: right;
+    padding-top: 10px;
+
+}
+.wrap .heading .chicken{
+    padding: 10px 20px;
+    background-color: palevioletred;
+}
+.wrap .heading .beef{
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+}
+.wrap .heading .sushi{
+    padding: 10px 20px;
+    background-color: orange;
+}
+@media screen and (max-width:991px) {
+    .wrap .item{
+        width: 48%;
+    }
+    .wrap .item:last-of-type {
+        width: 98%; 
+    }
+}
+
+@media screen and (max-width:767px) {
+    .wrap .item{
+        width: 99%;
+    }
+}
